@@ -24,14 +24,23 @@ for ($i=0; $i<3; $i++) {
 
 // la boucle foreach
 
-$eleves = [
-    'cm2' => ['Jean', 'Marion', 'André', 'Etienne', 'Jules'],
-    'cm1' => ['Marc', 'Robert', 'Arthir', 'Joachim', 'Hamed', 'Roger']
+$eleves =
+[
+    'cm2' =>
+    [
+        'Jean', 'Marion', 'André', 'Etienne', 'Jules'
+    ],
+    'cm1' =>
+    [
+        'Marc', 'Robert', 'Arthir', 'Joachim', 'Hamed', 'Roger'
+    ],
 ];
 
-foreach ($eleves as $classe => $listEleves) {
+foreach ($eleves as $classe => $listEleves)
+{
     echo "La classe $classe \n";
-    foreach ($listEleves as $eleves) {
+    foreach ($listEleves as $eleves)
+    {
         echo "- $eleves \n";
     }
     echo "\n";

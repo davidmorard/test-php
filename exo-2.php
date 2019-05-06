@@ -17,15 +17,20 @@ On demande à l'utilisateur de renter une heure et on lui dira si le magasin est
 
 $creneaux =[];
 
-while (true) {
+while (true)
+{
     $debut = (int)readline('Heure d\'ouverture : ');
     $fin = (int)readline('Heure de fermeture : ');
-    if ($debut >= $fin) {
+    if ($debut >= $fin) 
+    {
         echo "Le créneau ne peut pas être enregistré car l'heure d'ouverture ($debut) est supérieur à l'heure de fermeture ($fin)";
-    } else {
+    }
+    else 
+    {
         $creneaux[] = [$debut, $fin];
         $action = readline('Voulez-vous enregistrer un nouveau créneau (o/n)');
-        if ($action === 'n') {
+        if ($action === 'n')
+        {
             break;
         }
     }
