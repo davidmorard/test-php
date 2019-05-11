@@ -1,10 +1,12 @@
 <?php
-/* $nom = "Doe";
+$nom = "Doe";
 $prenom = "John";
 $note = 10;
 $note2 = 15;
 $moyenne = ($note + $note2)  / 2;
-echo "Bonjour  $prenom   $nom  votre moyenne est de $moyenne"; */
+echo "Bonjour  $prenom   $nom  votre moyenne est de $moyenne";
+
+
 
 /* $classe =[
     'nom' => 'Morard',
@@ -13,7 +15,7 @@ echo "Bonjour  $prenom   $nom  votre moyenne est de $moyenne"; */
 ];
 print_r ($classe['notes']); */
 
-$classe = [
+/* $classe = [
     [
     'nom' => 'Doe',
     'prenom' => 'john',
@@ -29,5 +31,5 @@ echo $classe[1]['nom'];
 echo $classe[1]['prenom'];
 echo $classe[1]['notes'][0];
 echo $classe[1]['notes'][1];
-echo $classe[1]['notes'][2];
+echo $classe[1]['notes'][2];*/
 ?>
