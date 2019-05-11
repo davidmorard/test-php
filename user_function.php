@@ -18,9 +18,10 @@ function repondre_oui_non ($phrase) {
         $reponse = readline($phrase . " - (o/n) : ");
         if ($reponse === "o") {
             return true;
-        } elseif ($reponse === "n") { 
+        } 
+        elseif ($reponse === "n") { 
             return false; 
-          }
+        }
     }
 }
 $resultat = repondre_oui_non('Voulez-vous continuer ?');
