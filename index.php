@@ -11,17 +11,20 @@
         </h2>
         <p>
             <?php 
-            $isEnable = false ; // la condition d'accès
-            if ($isEnable === true) {
+            $isEnable = "non" ; // la condition d'accès
+            if ($isEnable === "oui") {
                 echo "Vous êtes autorisé à accéder au site !";
             }
-            else {
+            elseif ($isEnable === "non") {
                 echo "Vous n'avez pas accès au site !";
+            }
+            else {
+                echo "Je ne comprends pas ce que vous voulez dire";
             }
             ?>
         </p>
         <p>
-            Cette contient du code HTML avec des balises PHP.
+            Cette page contient du code HTML avec des balises PHP.
             <br />
             <?php
             $authorName ="David MORARD";
