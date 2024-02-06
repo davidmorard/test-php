@@ -8,13 +8,28 @@
     </head>
     <body>
         <h2>Page de test
-
         </h2>
+        <p>
+            <?php 
+            $isEnable = false ; // la condition d'accès
+            if ($isEnable === true) {
+                echo "Vous êtes autorisé à accéder au site !";
+            }
+            else {
+                echo "Vous n'avez pas accès au site !";
+            }
+            ?>
+        </p>
         <p>
             Cette contient du code HTML avec des balises PHP.
             <br />
-            <?php echo("C'est ici qu'il y a du code PHP avec l'instruction 'echo'")
+            <?php
+            $authorName ="David MORARD";
+            echo "Le nom de l'auteur est "; 
+            echo $authorName;
             ?>
+        </p>
+        <p>
             Voici quelques petits tests :
         </p>
 
